@@ -1,101 +1,75 @@
-/* Reset & Base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 body {
   font-family: 'Inter', sans-serif;
   background-color: #FAFAFA;
   color: #212121;
-  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header */
+/* Header & Navigation */
 header {
   background: linear-gradient(to right, #3F51B5, #009688);
   color: white;
-  padding: 2rem 1rem;
-  text-align: center;
+  padding: 1rem;
 }
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 nav h1 {
   font-family: 'Playfair Display', serif;
   font-size: 2rem;
 }
-nav ul {
+.nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
-nav a {
+.nav-links a {
   color: white;
   text-decoration: none;
   font-weight: 600;
 }
-.hero {
-  margin-top: 2rem;
-}
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-}
-.hero p {
-  font-size: 1.2rem;
-}
 
-/* Portfolio */
-.portfolio {
-  padding: 3rem 1rem;
-  text-align: center;
-}
-.portfolio h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-}
-
-/* Showreel Slider */
-.showreel {
+/* Carousel */
+.carousel {
   overflow: hidden;
   width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-.slider {
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.carousel-track {
   display: flex;
-  animation: slide 15s infinite linear;
+  transition: transform 0.5s ease-in-out;
 }
-.slider img {
+.carousel-track img {
   width: 100%;
   flex-shrink: 0;
   object-fit: cover;
 }
 
-/* Grid Gallery */
+/* Portfolio Grid */
+.portfolio {
+  padding: 2rem 1rem;
+  text-align: center;
+}
 .grid-gallery {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   gap: 10px;
-  padding: 2rem 1rem;
 }
 .grid-item img {
   width: 100%;
-  height: auto;
   border-radius: 4px;
   transition: transform 0.3s ease;
 }
 .grid-item img:hover {
   transform: scale(1.05);
 }
-
-/* Responsive Layout */
 @media (max-width: 768px) {
   .grid-gallery {
     grid-template-columns: repeat(3, 1fr);
@@ -107,25 +81,37 @@ nav a {
   }
 }
 
-/* About */
+/* About Us */
 .about {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   background-color: #F5F5F5;
   text-align: center;
 }
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+.bio-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.bio {
+  max-width: 300px;
+  text-align: center;
+}
+.bio img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.bio h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
 }
 
 /* Contact */
 .contact {
-  padding: 3rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
-}
-.contact h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 form {
   display: flex;
@@ -150,6 +136,28 @@ button {
 button:hover {
   background-color: #303F9F;
 }
+
+/* Social Icons */
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+.instagram { background-image: url('icons/instagram.png'); }
+.x { background-image: url('icons/x.png'); }
+.linkedin { background-image: url('icons/linkedin.png'); }
+.pinterest { background-image: url('icons/pinterest.png'); }
+.youtube { background-image: url('icons/youtube.png'); }
 
 /* Footer */
 footer {
