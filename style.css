@@ -16,6 +16,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 nav h1 {
   font-family: 'Playfair Display', serif;
@@ -44,7 +45,7 @@ nav h1 {
 }
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 .carousel-track img {
   width: 100%;
@@ -59,7 +60,7 @@ nav h1 {
 }
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(9, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 .grid-item img {
@@ -72,7 +73,7 @@ nav h1 {
 }
 @media (max-width: 768px) {
   .grid-gallery {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 480px) {
