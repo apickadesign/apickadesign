@@ -3,136 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ApickaDesign</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 30px;
-      background-color: #3D5A80;
-      color: white;
-    }
-    .menu-icon {
-      font-size: 24px;
-      cursor: pointer;
-    }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #fff;
-    }
-    .play-button {
-      width: 80px;
-      height: 80px;
-      background-color: #EE6C4D;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 36px;
-      cursor: pointer;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 20px;
-      padding: 40px 30px;
-      background-color: #e0f7fa;
-    }
-    .tile {
-      background-color: #3D5A80;
-      height: 100px;
-      border-radius: 8px;
-    }
-    .profiles {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 60px 20px;
-      background-color: #fff;
-    }
-    .profile {
-      text-align: center;
-      max-width: 150px;
-    }
-    .avatar {
-      width: 80px;
-      height: 80px;
-      background-color: #98C1D9;
-      border-radius: 50%;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      color: white;
-    }
-    .profile p {
-      font-size: 0.9em;
-      color: #555;
-    }
-  </style>
+  <title>ApickaDesign Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <div>APICKADESIGN</div>
-    <div class="menu-icon">☰</div>
+    <nav>
+      <h1>ApickaDesign</h1>
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h2>Designs that Speak. Stories that Inspire.</h2>
+      <p>Explore my creative journey through visuals and ideas.</p>
+    </section>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <iframe width="90%" height="500" src="https://www.youtube.com/watch?v=jP0f2P8bX5I" 
-    title="Showreel" frameborder="0" allowfullscreen></iframe>
-    <p style="margin-top: 20px;">Watch the Showreel</p>
-  </section>
+  <main>
+    <section id="portfolio" class="portfolio">
+      <h2>My Work</h2>
+      <div class="grid">
+        <!-- Repeat this block for each project -->
+        <div class="card">
+          <img src="images/project1.jpg" alt="Project 1" />
+          <h3>Project Title</h3>
+          <p>Short description of the project.</p>
+        </div>
+        <!-- Add more cards as needed -->
+      </div>
+    </section>
 
-  <!-- Grid Section -->
-  <section class="grid">
-    <div class="tile" style="background-image: url('https://imgur.com/gallery/ive-taken-from-imgur-years-time-to-give-back-be-change-you-want-to-see-all-that-Dkyk7RS#s2NYjD3'); background-size: cover; background-position: center;"></div>
-    <div class="tile"></div>
-    <div class="tile"></div>
-    <div class="tile"></div>
-    <div class="tile"></div>
-    <div class="tile"></div>
-  </section>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>I'm a passionate designer blending creativity with technology to craft meaningful experiences. I specialize in UI/UX, branding, and visual storytelling.</p>
+    </section>
 
-  <!-- Profile Section -->
-  <section class="profiles">
-    <div class="profile">
-      <div class="avatar">👤</div>
-      <p>Nunc viverra</p>
-      <p>Imperdiet enim fusce est.</p>
-    </div>
-    <div class="profile">
-      <div class="avatar">👤</div>
-      <p>Vivamus a tellus</p>
-      <p>Imperdiet enim fusce est.</p>
-    </div>
-    <div class="profile">
-      <div class="avatar">👤</div>
-      <p>Nunc viverra</p>
-      <p>Imperdiet enim fusce est.</p>
-    </div>
-    <div class="profile">
-      <div class="avatar">👤</div>
-      <p>Vivamus a tellus</p>
-      <p>Imperdiet enim fusce est.</p>
-    </div>
-  </section>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
 
+  <footer>
+    <p>&copy; 2025 ApickaDesign. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
-
-
