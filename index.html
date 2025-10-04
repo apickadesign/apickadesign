@@ -22,9 +22,9 @@
     <section class="carousel">
       <div class="carousel-container">
         <div class="carousel-track">
-          <img src="images/Slide19.JPG" alt="Slide 1" />
-          <img src="images/Slide11.JPG" alt="Slide 2" />
-          <img src="images/Slide12.JPG" alt="Slide 3" />
+          <img src="images/slide1.gif" alt="Slide 1" />
+          <img src="images/slide2.gif" alt="Slide 2" />
+          <img src="images/slide3.gif" alt="Slide 3" />
         </div>
       </div>
     </section>
@@ -32,19 +32,17 @@
 
   <main>
     <section id="portfolio" class="portfolio">
-      <h2>Gallery</h2>
+      <h2>Portfolio</h2>
       <div class="grid-gallery">
-        <!-- Add up to 81 images for 9x9 -->
-        <div class="grid-item"><img src="images/Slide10.JPG" alt="Grid 1" /></div>
-        <div class="grid-item"><img src="images/Slide11.JPG" alt="Grid 2" /></div>
-        <div class="grid-item"><img src="images/Slide12.JPG" alt="Grid 3" /></div>
-        <div class="grid-item"><img src="images/Slide13.JPG" alt="Grid 4" /></div>
-        <div class="grid-item"><img src="images/Slide14.JPG" alt="Grid 5" /></div>
-        <div class="grid-item"><img src="images/Slide15.JPG" alt="Grid 6" /></div>
-        <div class="grid-item"><img src="images/Slide16.JPG" alt="Grid 7" /></div>
-        <div class="grid-item"><img src="images/Slide17.JPG" alt="Grid 8" /></div>
-        <div class="grid-item"><img src="images/Slide18.JPG" alt="Grid 9" /></div>
-        <!-- Repeat as needed -->
+        <div class="grid-item"><img src="images/grid1.jpg" alt="Grid 1" /></div>
+        <div class="grid-item"><img src="images/grid2.jpg" alt="Grid 2" /></div>
+        <div class="grid-item"><img src="images/grid3.jpg" alt="Grid 3" /></div>
+        <div class="grid-item"><img src="images/grid4.jpg" alt="Grid 4" /></div>
+        <div class="grid-item"><img src="images/grid5.jpg" alt="Grid 5" /></div>
+        <div class="grid-item"><img src="images/grid6.jpg" alt="Grid 6" /></div>
+        <div class="grid-item"><img src="images/grid7.jpg" alt="Grid 7" /></div>
+        <div class="grid-item"><img src="images/grid8.jpg" alt="Grid 8" /></div>
+        <div class="grid-item"><img src="images/grid9.jpg" alt="Grid 9" /></div>
       </div>
     </section>
 
@@ -52,12 +50,12 @@
       <h2>About Us</h2>
       <div class="bio-container">
         <div class="bio">
-          <img src="https://i.imgur.com/V21KquB.jpeg" alt="Person 1" />
+          <img src="images/person1.jpg" alt="Person 1" />
           <h3>Alex</h3>
           <p>Creative Director with a passion for storytelling and design.</p>
         </div>
         <div class="bio">
-          <img src="https://i.imgur.com/jP6IBj2.jpeg" alt="Person 2" />
+          <img src="images/person2.jpg" alt="Person 2" />
           <h3>Sam</h3>
           <p>UX Designer focused on intuitive interfaces and user empathy.</p>
         </div>
@@ -87,15 +85,13 @@
   </footer>
 
   <script>
-    // Swipeable carousel logic
+    // Smooth carousel logic
     const track = document.querySelector('.carousel-track');
     let index = 0;
     setInterval(() => {
       index = (index + 1) % track.children.length;
       track.style.transform = `translateX(-${index * 100}%)`;
-    }, 3000);
+    }, 4000); // 4-second delay
   </script>
 </body>
 </html>
-
-
